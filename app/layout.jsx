@@ -18,7 +18,7 @@ const fontBody = Fira_Sans({
   subsets: ['latin'],
   display: 'swap',
   variable: '--font-body',
-  weight: ['400', '700'],
+  weight: ['300', '400', '700'],
 });
 
 
@@ -30,7 +30,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={cn(fontBody.variable, fontHeading.variable, 'antialiased bg-stone-100 dark:bg-stone-900 text-stone-950 dark:text-stone-100')}>
+      <body className={cn(fontBody.variable, fontHeading.variable, 'antialiased bg-stone-100 dark:bg-stone-950 text-stone-950 dark:text-stone-100')}>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
