@@ -30,7 +30,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={cn(fontBody.variable, fontHeading.variable, 'antialiased bg-stone-100 dark:bg-stone-950 text-stone-950 dark:text-stone-100')}>
+      <body className={cn(fontBody.variable, fontHeading.variable, 'antialiased bg-neutral-100 dark:bg-neutral-950 text-neutral-950 dark:text-neutral-100')}>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"

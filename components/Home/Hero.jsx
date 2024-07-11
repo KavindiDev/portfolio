@@ -5,7 +5,7 @@ export default function Hero() {
     return (
         <section id="home" className="justify-center text-center">
             <div className="container mx-auto flex flex-col h-screen text-2xl md:text-xl relative -top-8 gap-4 md:gap-1 md:items-center justify-center px-4 md:px-6">
-                <p className="mt-4  mx-auto max-w-2xl w-fit rounded-full border border-slate-700/50 dark:border-slate-300/50 px-4 mb-4">
+                <p className="mt-4  mx-auto max-w-2xl w-fit rounded-full border border-neutral-700/50 dark:border-neutral-300/50 px-4 mb-4">
                     Hi there! 👋 I&apos;m
                 </p>
                 <h1 className="text-7xl font-bold tracking-tight md:text-6xl">Dewmini Thakshila</h1>
@@ -17,7 +17,7 @@ export default function Hero() {
                 <div className="mt-8 flex flex-col justify-center gap-5 items-center md:flex-row md:items-start">
                     <Link
                         href="/assets/resume.pdf" download
-                        className="block w-fit items-center rounded-full bg-accent px-6 py-3 font-medium text-stone-950 transition-colors hover:bg-accent-foreground"
+                        className="block w-fit items-center rounded-full bg-accent px-6 py-3 font-medium text-neutral-950 transition-colors hover:bg-accent-foreground"
                     >
                         <div className="flex items-center">
                             <Download className="w-6 h-6 mr-2" />
@@ -26,7 +26,7 @@ export default function Hero() {
                     </Link>
                     <Link
                         href="https://www.linkedin.com/in/dewminithakshila/"
-                        className="block w-fit items-center rounded-full border border-accent px-6 py-3 font-medium text-accent transition-colors hover:bg-accent hover:text-stone-950 group"
+                        className="block w-fit items-center rounded-full border border-accent px-6 py-3 font-medium text-accent transition-colors hover:bg-accent hover:text-neutral-950 group"
                         prefetch={false}
                     >
                         <div className="flex items-center">

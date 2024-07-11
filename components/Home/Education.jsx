@@ -10,9 +10,9 @@ export default function Education() {
                         education.map((item, index) => (
                             <div key={item.slug} className="border-l-4 border-accent hover:border-accent-foreground pl-4">
                                 <h3 className="text-xl font-bold">{item.title}</h3>
-                                <p className="mt-1 text-stone-800 dark:text-stone-200">{item.subtitle}</p>
-                                <p className="mt-1 text-stone-800 dark:text-stone-200">{item.date}</p>
-                                <p className="mt-4 text-stone-800 dark:text-stone-200">{item.description}</p>
+                                <p className="mt-1 text-neutral-800 dark:text-neutral-200">{item.subtitle}</p>
+                                <p className="mt-1 text-neutral-800 dark:text-neutral-200">{item.date}</p>
+                                <p className="mt-4 text-neutral-800 dark:text-neutral-200">{item.description}</p>
                             </div>
                         ))
                     }

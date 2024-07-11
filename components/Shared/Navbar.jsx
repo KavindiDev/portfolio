@@ -42,14 +42,14 @@ export default function Navbar() {
   }, []);
 
   return (
-    <Disclosure as="nav" className="bg-stone-100 dark:bg-stone-900 shadow sticky top-0 z-50">
+    <Disclosure as="nav" className="bg-neutral-100 dark:bg-neutral-900 shadow sticky top-0 z-50">
       {({ open }) => (
         <>
           <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
             <div className="relative flex justify-between h-16">
               <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                 {/* Mobile menu button */}
-                <DisclosureButton className="inline-flex items-center justify-center p-2 rounded-md hover:text-stone-600 bg-stone-50 hover:bg-stone-200 dark:hover:text-stone-400 dark:bg-stone-950 dark:hover:bg-stone-800 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-accent">
+                <DisclosureButton className="inline-flex items-center justify-center p-2 rounded-md hover:text-neutral-600 bg-neutral-50 hover:bg-neutral-200 dark:hover:text-neutral-400 dark:bg-neutral-950 dark:hover:bg-neutral-800 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-accent">
                   <span className="sr-only">Open main menu</span>
                   {open ? (
                     <XIcon className="block h-6 w-6" aria-hidden="true" />
@@ -67,7 +67,7 @@ export default function Navbar() {
                     <a
                       href={item.href}
                       key={item.name}
-                      className={cn(active === item.name ? "text-accent border-accent" : "border-transparent", "hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium")}
+                      className={cn(active === item.name ? "text-accent border-accent" : "border-transparent", "hover:border-neutral-300 hover:text-neutral-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium")}
                     >
                       {item.name}
                     </a>
@@ -86,7 +86,7 @@ export default function Navbar() {
                 <Link
                   href={item.href}
                   key={item.name}
-                  className={cn(active === item.name ? "text-accent border-accent" : "border-transparent", "hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium")}
+                  className={cn(active === item.name ? "text-accent border-accent" : "border-transparent", "hover:border-neutral-300 hover:text-neutral-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium")}
                 >
                   {item.name}
                 </Link>

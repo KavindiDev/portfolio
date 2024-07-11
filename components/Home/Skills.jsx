@@ -33,7 +33,7 @@ export default function Skills() {
                   <div key={skill.title} className="flex flex-col items-center justify-center rounded-md bg-accent p-4 md:p-6 text-black transition-colors hover:bg-accent-foreground">
                     <skill.icon className="h-6 w-6 md:h-8 md:w-8" />
                     <h3 className="mt-2 text-base md:text-lg font-medium">{skill.title}</h3>
-                    <p className="mt-1 text-xs md:text-sm text-stone-900">{skill.description}</p>
+                    <p className="mt-1 text-xs md:text-sm text-neutral-900">{skill.description}</p>
                   </div>
                 ))
               }

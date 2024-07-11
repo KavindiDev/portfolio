@@ -11,7 +11,7 @@ export default function Projects() {
                     {
                         projects.map((project, index) => (
                             <div key={index} className="w-full md:w-1/2 lg:w-1/3 px-4 mb-8">
-                                <div className="flex flex-col h-full bg-stone-200 text-stone-950 dark:text-stone-50 dark:bg-stone-900 border-0 rounded-md overflow-hidden">
+                                <div className="flex flex-col h-full bg-neutral-200 text-neutral-950 dark:text-neutral-50 dark:bg-neutral-900 border-0 rounded-md overflow-hidden">
                                     <div className="flex-grow flex flex-col p-4">
                                         <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
                                         <div className="flex-shrink-0">
@@ -23,7 +23,7 @@ export default function Projects() {
                                                 className="aspect-video object-cover w-full p-2"
                                             />
                                         </div>
-                                        <p className="flex-grow text-stone-900 dark:text-stone-300 mb-2">{project.description}</p>
+                                        <p className="flex-grow text-neutral-900 dark:text-neutral-300 mb-2">{project.description}</p>
                                     </div>
                                     <div className="flex justify-between p-4">
                                         {project.github ? (
