@@ -25,13 +25,13 @@ export function ModeToggle() {
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end" className="bg-stone-100 dark:bg-stone-800 text-stone-900 dark:text-stone-100 dark:border-stone-900">
-        <DropdownMenuItem onClick={() => setTheme("light")}>
+        <DropdownMenuItem onClick={() => setTheme("light")} className="hover:bg-accent focus:text-stone-800 dark:focus:text-stone-200">
           Light
         </DropdownMenuItem>
-        <DropdownMenuItem onClick={() => setTheme("dark")}>
+        <DropdownMenuItem onClick={() => setTheme("dark")} className="hover:bg-accent focus:text-stone-800 dark:focus:text-stone-200">
           Dark
         </DropdownMenuItem>
-        <DropdownMenuItem onClick={() => setTheme("system")}>
+        <DropdownMenuItem onClick={() => setTheme("system")} className="hover:bg-accent focus:text-stone-800 dark:focus:text-stone-200">
           System
         </DropdownMenuItem>
       </DropdownMenuContent>

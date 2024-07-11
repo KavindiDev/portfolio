@@ -17,7 +17,7 @@ export default function Hero() {
                 <div className="mt-8 flex flex-col justify-center gap-5 items-center md:flex-row md:items-start">
                     <Link
                         href="/assets/resume.pdf" download
-                        className="block w-fit items-center rounded-full bg-accent px-6 py-3 font-medium text-stone-950 transition-colors hover:bg-[#1ED760]"
+                        className="block w-fit items-center rounded-full bg-accent px-6 py-3 font-medium text-stone-950 transition-colors hover:bg-accent-foreground"
                     >
                         <div className="flex items-center">
                             <Download className="w-6 h-6 mr-2" />
@@ -26,7 +26,7 @@ export default function Hero() {
                     </Link>
                     <Link
                         href="https://www.linkedin.com/in/dewminithakshila/"
-                        className="block w-fit items-center rounded-full border border-accent px-6 py-3 font-medium text-[#1DB954] transition-colors hover:bg-[#1DB954] hover:text-stone-950 group"
+                        className="block w-fit items-center rounded-full border border-accent px-6 py-3 font-medium text-accent transition-colors hover:bg-accent hover:text-stone-950 group"
                         prefetch={false}
                     >
                         <div className="flex items-center">
