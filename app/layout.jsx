@@ -7,6 +7,7 @@ import { cn } from "@/lib/utils";
 import Navbar from "@/components/Shared/Navbar";
 import Footer from "@/components/Shared/Footer";
 import { ThemeProvider } from "@/components/Shared/theme-provider";
+import { PHProvider } from "./providers"
 
 const fontHeading = Inter_Tight({
   subsets: ['latin'],
@@ -30,6 +31,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <PHProvider>
       <body className={cn(fontBody.variable, fontHeading.variable, 'antialiased bg-neutral-100 dark:bg-neutral-950 text-neutral-950 dark:text-neutral-100')}>
         <ThemeProvider
           attribute="class"
@@ -42,6 +44,7 @@ export default function RootLayout({ children }) {
           <Footer />
         </ThemeProvider>
       </body>
+      </PHProvider>
     </html>
   );
 }
